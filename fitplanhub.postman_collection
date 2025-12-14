@@ -1,0 +1,210 @@
+{
+	"info": {
+		"_postman_id": "2b1f26dd-ec3d-4bc8-ab78-6c3cc71c35ff",
+		"name": "localhost:5000",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "28981718"
+	},
+	"item": [
+		{
+			"name": "/api/follow/follow/693e5dea52039ad0d3584af1",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY5M2U1ZGVhNTIwMzlhZDBkMzU4NGFmMSIsInJvbGUiOiJUUkFJTkVSIiwiaWF0IjoxNzY1Njk4MzkxfQ.pMhtWvu2BHghub0zpFRbktlonu8jHw-BHH0pmD3MQpI",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:5000/api/follow/follow/693e5dea52039ad0d3584af1",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5000",
+					"path": [
+						"api",
+						"follow",
+						"follow",
+						"693e5dea52039ad0d3584af1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "/api/subscribe/693e84ba6e7b745bb0869833",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY5M2U1ZGVhNTIwMzlhZDBkMzU4NGFmMSIsInJvbGUiOiJUUkFJTkVSIiwiaWF0IjoxNzY1Njk4MzkxfQ.pMhtWvu2BHghub0zpFRbktlonu8jHw-BHH0pmD3MQpI",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:5000/api/subscribe/693e84ba6e7b745bb0869833",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5000",
+					"path": [
+						"api",
+						"subscribe",
+						"693e84ba6e7b745bb0869833"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "/api/plans",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:5000/api/plans",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5000",
+					"path": [
+						"api",
+						"plans"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "/api/plans",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY5M2U1ZGVhNTIwMzlhZDBkMzU4NGFmMSIsInJvbGUiOiJUUkFJTkVSIiwiaWF0IjoxNzY1Njk4MzkxfQ.pMhtWvu2BHghub0zpFRbktlonu8jHw-BHH0pmD3MQpI",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"title\": \"Fat Loss Beginner Plan\",\r\n  \"description\": \"A 30-day plan for beginners to lose fat\",\r\n  \"price\": 500,\r\n  \"duration\": 30\r\n}\r\n",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:5000/api/plans",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5000",
+					"path": [
+						"api",
+						"plans"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "/api/auth/login",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"email\": \"trainer@test.com\",\r\n  \"password\": \"123456\"\r\n}\r\n",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:5000/api/auth/login",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5000",
+					"path": [
+						"api",
+						"auth",
+						"login"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "/api/auth/signup",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"name\": \"Test Trainer\",\r\n  \"email\": \"trainer@test.com\",\r\n  \"password\": \"123456\",\r\n  \"role\": \"TRAINER\"\r\n}\r\n",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:5000/api/auth/signup",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5000",
+					"path": [
+						"api",
+						"auth",
+						"signup"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
